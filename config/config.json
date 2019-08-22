@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "davehardy632",
+    "password": null,
+    "database": "edamam_microservice_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "davehardy632",
+    "password": null,
+    "database": "edamam_microservice_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "davehardy632",
+    "password": null,
+    "database": "edamam_microservice_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
