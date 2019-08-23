@@ -2,25 +2,171 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
+    return queryInterface.bulkInsert('Recipes', [{
+      foodType: "chicken",
+      thumbnailImg: "https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg",
+      ingredientNum: 10,
+      prepTime: 60.0,
+      ingredients: "1/2 cup olive oil,5 cloves garlic, peeled,2 large russet potatoes, peeled and cut into chunks,1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs),3/4 cup white wine,3/4 cup chicken stock,3 tablespoons chopped parsley,1 tablespoon dried oregano,Salt and pepper,1 cup frozen peas, thawed",
+      calories: 4230.305691201081,
+      url: "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html",
+      dietLabel: "Low-Carb",
+      healthLabel: "Peanut-Free",
+      cautions: "Sulfites",
+      fat: 274.57692448260667,
+      carbs: 177.8427845163874,
+      protein: 230.99085117764236,
+      yield: 4.0
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
+    {
+      foodType: "chicken",
+      thumbnailImg: ,
+      ingredientNum: ,
+      prepTime: ,
+      ingredients: ,
+      calories: ,
+      url: ,
+      dietLabel: ,
+      healthLabel: ,
+      cautions: ,
+      fat: ,
+      carbs: ,
+      protein: ,
+      yield:
+    },
 
-      Example:
-      return queryInterface.bulkInsert('People', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
+    ], {});
   },
 
   down: (queryInterface, Sequelize) => {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('People', null, {});
-    */
+    return queryInterface.bulkDelete('Recipes', null, {});
   }
 };
