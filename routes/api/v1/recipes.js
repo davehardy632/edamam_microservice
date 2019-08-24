@@ -5,12 +5,12 @@ var Recipe = require('../../../models').Recipe;
 router.get("/food_search", async function(req, res, next) {
   foodType = req.url.split("=")[1]
   recipeAttributes = ["id", "foodType", "recipeName", "thumbnailImg", "ingredientNum", "prepTime", "ingredients", "calories", "url", "dietLabel", "healthLabel", "cautions", "fat", "carbs", "protein", "yield"]
+  recipes = await recipesByFoodType(foodType, recipeAttributes)
   if (!foodType) {
     noArgumentError = {"message": "Missing query parameter"}
     res.setHeader("Content-Type", "application/json");
     res.status(404).send(JSON.stringify(noArgumentError));
   } else {
-    recipes = await recipesByFoodType(foodType, recipeAttributes)
     if (recipes.length != 0) {
       res.setHeader("Content-Type", "application/json");
       res.status(200).send(JSON.stringify(recipes));
