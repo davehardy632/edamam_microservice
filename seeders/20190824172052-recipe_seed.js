@@ -2,6 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
+
     return queryInterface.bulkInsert('Recipes', [{
       foodType: "chicken",
       recipeName: "Chicken Vesuvio",
@@ -17,7 +18,9 @@ module.exports = {
       fat: 274.57692448260667,
       carbs: 177.8427845163874,
       protein: 230.99085117764236,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -34,7 +37,9 @@ module.exports = {
       fat: 208.05040250005803,
       carbs: 47.816761250147486,
       protein: 236.58131375005138,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -51,7 +56,9 @@ module.exports = {
       fat: 68.98859509999785,
       carbs: 28.305420749968757,
       protein: 84.4422101499929,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -68,7 +75,9 @@ module.exports = {
       fat: 90.452899,
       carbs: 6.265814,
       protein: 74.289985,
-      yield: 2.0
+      yield: 2,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -85,7 +94,9 @@ module.exports = {
       fat: 340.63488831153063,
       carbs: 60.159430950971164,
       protein: 164.41389729372395,
-      yield: 5.0
+      yield: 5,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -102,7 +113,9 @@ module.exports = {
       fat: 59.210045762393,
       carbs: 44.2011128314225,
       protein: 147.362117825729,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -119,7 +132,9 @@ module.exports = {
       fat: 184.49040280636,
       carbs: 2.56725,
       protein: 201.3800703516,
-      yield: 10.0
+      yield: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -136,7 +151,9 @@ module.exports = {
       fat: 681.8915644444445,
       carbs: 100.04442666666668,
       protein: 669.7396711111112,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -153,7 +170,9 @@ module.exports = {
       fat: 119.40308200000001,
       carbs: 132.07783800000004,
       protein: 97.6918,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "chicken",
@@ -170,7 +189,9 @@ module.exports = {
       fat: 282.991197856737,
       carbs: 88.61250798681543,
       protein: 94.05590370957057,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -187,7 +208,9 @@ module.exports = {
       fat: 317.28082780000005,
       carbs: 4.2035435,
       protein: 369.4539567,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -204,7 +227,9 @@ module.exports = {
       fat: 100.28143028999999,
       carbs: 16.65656,
       protein: 96.182747896,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -221,7 +246,9 @@ module.exports = {
       fat: 19.4355448,
       carbs: 0.22254600000000005,
       protein: 23.328957199999998,
-      yield: 1.0
+      yield: 1,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -238,7 +265,9 @@ module.exports = {
       fat: 56.99964992749608,
       carbs: 55.50949589344686,
       protein: 115.98313657870894,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -255,7 +284,9 @@ module.exports = {
       fat: 66.2773389133384,
       carbs: 15.01838708357277,
       protein: 191.81738954201194,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -272,7 +303,9 @@ module.exports = {
       fat: 100.26836826000002,
       carbs: 66.4909075,
       protein: 257.94564187333333,
-      yield: 13.0
+      yield: 13,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -289,7 +322,9 @@ module.exports = {
       fat: 49.64757498250468,
       carbs: 57.627434585078674,
       protein: 232.2537696948894,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -306,7 +341,9 @@ module.exports = {
       fat: 0.14275999999999997,
       carbs: 0.057420000000000006,
       protein: 1.6566399999999997,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -323,7 +360,9 @@ module.exports = {
       fat: 3.81169551898,
       carbs: 0.81715271262,
       protein: 11.978556272730001,
-      yield: 2.0
+      yield: 2,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "fish",
@@ -340,7 +379,9 @@ module.exports = {
       fat: 21.643038623333332,
       carbs: 32.25947083333333,
       protein: 95.46084206266666,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -357,7 +398,9 @@ module.exports = {
       fat: 88.125,
       carbs: 10.3186,
       protein: 279.5382,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -374,7 +417,9 @@ module.exports = {
       fat: 38.21515717250001,
       carbs: 0.0,
       protein: 42.773760491000004,
-      yield: 2.0
+      yield: 2,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -391,7 +436,9 @@ module.exports = {
       fat: 341.77271507322234,
       carbs: 191.8292018888889,
       protein: 683.9987416858888,
-      yield: 8.0
+      yield: 8,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -408,7 +455,9 @@ module.exports = {
       fat: 78.07700048950001,
       carbs: 92.499612954,
       protein: 350.49901103800005,
-      yield: 8.0
+      yield: 8,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -425,7 +474,9 @@ module.exports = {
       fat: 148.61280408157202,
       carbs: 32.085502185690004,
       protein: 111.25098885045801,
-      yield: 4.0
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -436,13 +487,15 @@ module.exports = {
       ingredients: "1 pound beef stew meat, 2 tablespoons flour, 1 onion, sliced, 1 teaspoon dried thyme, 1/2 cup red wine, 15 ounces beef broth (1 can), 2 carrots, sliced, 10 ounces baby portabello mushrooms",
       calories: 939.2440318740386,
       url: "https://food52.com/recipes/14484-portabello-beef-stew",
-      dietLabel: ,
+      dietLabel: "not available",
       healthLabel: "Peanut-Free",
       cautions: "Gluten",
       fat: 24.445251306372416,
       carbs: 50.57031379317341,
       protein: 113.56300074734773,
-      yield: 3.0
+      yield: 3,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -459,7 +512,9 @@ module.exports = {
       fat: 181.78194800000003,
       carbs: 34.3036,
       protein: 159.63601985800003,
-      yield: 10.0
+      yield: 10,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -476,7 +531,9 @@ module.exports = {
       fat: 72.8876447632153,
       carbs: 77.66272941319178,
       protein: 193.78821009645634,
-      yield: 6.0
+      yield: 6,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -493,7 +550,9 @@ module.exports = {
       fat: 166.402755651,
       carbs: 48.759249999999994,
       protein: 72.92083128000002,
-      yield: 8.0
+      yield: 8,
+      createdAt: new Date(),
+      updatedAt: new Date()
     },
     {
       foodType: "beef",
@@ -510,10 +569,10 @@ module.exports = {
       fat: 58.91097329499986,
       carbs: 346.7152151875251,
       protein: 158.22485262599903,
-      yield: 4.0
-    }
-
-    ], {});
+      yield: 4,
+      createdAt: new Date(),
+      updatedAt: new Date()
+  }], {});
   },
 
   down: (queryInterface, Sequelize) => {

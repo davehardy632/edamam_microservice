@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     fat: DataTypes.FLOAT,
     carbs: DataTypes.FLOAT,
     protein: DataTypes.FLOAT,
-    yield: DataTypes.FLOAT
+    yield: DataTypes.INTEGER
   }, {});
   Recipe.associate = function(models) {
     // associations can be defined here
