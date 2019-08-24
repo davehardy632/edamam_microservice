@@ -1,24 +1,26 @@
-{
+require('dotenv').config();
+
+module.exports = {
   "development": {
-    "username": "davehardy632",
+    "username": process.env.DB_USER,
     "password": null,
-    "database": "edamam_microservice_development",
+    "database": process.env.DB_NAME_DEV,
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
   },
   "test": {
-    "username": "davehardy632",
+    "username": process.env.DB_USER,
     "password": null,
-    "database": "edamam_microservice_test",
+    "database": process.env.DB_NAME_TEST,
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
   },
   "production": {
-    "username": "davehardy632",
+    "username": process.env.DB_USER,
     "password": null,
-    "database": "edamam_microservice_production",
+    "database": process.env.DB_NAME_PROD,
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
