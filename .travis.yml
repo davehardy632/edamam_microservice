@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 12.8.0
+services:
+- postgresql
+script:
+- npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: iKB8qX8LsHpXYEHol5pzA+YPkjiIxDmOcJPOTFxmoavzXffUm+iDUWZfUWAG/qT/ih0ktpcNAivNWMSaJR+3h6nNJjMZwkPqg4RyJs5xcK0+P6HxIXxeG8JjmTXfkywtvR9wF0LG4yVMJN8uOSBxrPv6PoY9c0CoXFJ5TLEqVSDgEhqrfZ3LrwktqYArgkJEvoXU917MM6lhVQYFD4/nRI17jrvBBSigIsiQslMJKQfh4iOwxBsUHZ9C1EoPofdljWyd2ym0LlM1L+jW01IuAxav/IHIDD7ElQJoA3jg7aeUMJw0cu7tQT09ec7gv23RZsqKK8Kf5EAa/zZAQbJajnD+wve2HOB17KzuSuoakS1BJyicBsPsGZpEQaHXRvCPJ0DEQh4JaD+mQ0FrYRfrBECzm1H0RZmi4DgtW1H/Y3yQ+hpuMGd2UF0l7L22MzFV/rIhLGNeds7+r/4iG+DPOttl0f3f0gqEok0+8IpbpPlRap0rkrFqU0qp7V7g/uJO7J+u9+YlpH0tHq476M3VORDTyO88fFUXQCq5nF4eQe+Z+yK3z/XBcCeloO485og0N+MXuho4xMWr7iJqidl4jCcZtCQDnb+YFyTI/2Z/YYny92KFJ3354nrgeI8lYUowIyJwjK2bZ7/P1EO64ZiR9L4VgQIxoM5n1UJaHQXHnF4=
+  app: sheltered-fortress-37448
