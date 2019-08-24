@@ -51,7 +51,7 @@ module.exports = {
         type: Sequelize.FLOAT
       },
       yield: {
-        type: Sequelize.FLOAT
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
