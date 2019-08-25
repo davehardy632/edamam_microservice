@@ -53,6 +53,25 @@ router.get("/lowest_prep_time", async function(req, res) {
   });
 });
 
+router.get("/lowest_ingredient_num", async function(req, res) {
+  Recipe.findAll({
+    attributes: recipeAttributes,
+    order: sequelize.col('ingredientNum')
+  })
+  .then(orderedRecipes => {
+    if (orderedRecipes) {
+      res.setHeader("Content-Type", "application/json");
+      res.status(202).send(JSON.stringify(orderedRecipes));
+    } else {
+      res.setHeader("Content-Type", "application/json");
+      res.status(406).send(JSON.stringify({error: "No recipes found."}));
+  }})
+  .catch(error => {
+    res.setHeader("Content-Type", "application/json");
+    res.status(500).send(JSON.stringify(error));
+  });
+});
+
 
 router.get("/servings_search", async function(req, res, next) {
   servingSize = parseInt(req.url.split("=")[1])
