@@ -19,7 +19,7 @@ An API for supplying recipes and recipe data using Node.Js and Express using the
 
 > npm start
 
-* This application is deployed [here](https://sheltered-fortress-37448.herokuapp.com/).
+* This application is deployed [here](https://dashboard.heroku.com/apps/sheltered-fortress-37448).
 * The project board for this application is located [here](https://github.com/davehardy632/quantified_self/projects/1).
 
 ## Endpoints
